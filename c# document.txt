@@ -1,0 +1,87 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+       for(int i=1;i<=5;i++){
+         for(int j=1;j<=5;j++){
+           System.Console.Write(j);
+           System.Console.Write("");
+         }
+         System.Console.WriteLine();
+       }
+       
+       System.Console.WriteLine("USA");
+       System.Console.WriteLine("UK");
+       System.Console.WriteLine("India");
+       mylable:
+       System.Console.WriteLine("UP");
+       goto mylabel;
+       System.Console.WriteLine("Nepal");
+       System.Console.WriteLine("IRAN");
+      System.Console.ReadKey();
+    }  
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+		  string name = "John Doe";
+		  int charPos = name.IndexOf('D');
+		  string lastName = name.Substring(charPos);
+			Console.WriteLine(lastName);
+			int i = 0;
+			do{
+			  Console.WriteLine(i);
+			  i++;
+			} while(i<5);
+			
+			for(int j=1;j<=21;j++){
+			  if(j==5){
+			    continue;
+			  }
+			  Console.WriteLine(j);
+			}
+			int[,] numbers = {{1,2,3,},{8,4,5}};
+			for(int i=0;i<numbers.GetLength(0);i++){
+			  for(int j=0;j<numbers.GetLength(0);j++){
+			    Console.WriteLine(numbers[i,j]);
+			  }
+			}
+		}
+	}
+}
+
+
+
+
+using System;
+
+namespace _42.uzd_Array2d
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] numbers = new int[5, 5] { { 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 }, { 16, 17, 18, 19, 20 }, { 21, 22, 23, 24, 25 } };
+
+            for (int i = 0; i < numbers.GetLength(0); i++)
+            {
+                for (int j = 0; j < numbers.GetLength(1); j++)
+                {
+                    Console.WriteLine(numbers[i, j]);
+                }
+            }
+        }
+    }
+}
+// Izveidot divdimensiju masīvu int[5,5] un piešķirt elementiem vērtības. Izdrukāt visu elementu vērtības console.

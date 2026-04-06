@@ -1,0 +1,15 @@
+microservices, mvc, design patterns, saga pattern , solid principles, dependency injection, git, swagger, distributed transaction. What is Rest API?
+4.what is micro services? How it is implemented:
+5.Design Patterns : Repository Design pattern and CQRS Design Pattern ?
+6.what is Dependency Injection? How you are implementing it?
+7.How DI is working in .net core?
+8.DI types in .net core?  
+9. What is map in javascript, what is similar method in linq querying?
+
+⭐ MOST USED DESIGN PATTERNS IN .NET (Say This)
+Pattern	Where Used
+MVC	ASP.NET applications
+Singleton	Logging, configuration
+Repository	Data access layer
+Factory	Object creation
+Dependency Injection	Loose coupling

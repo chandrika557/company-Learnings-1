@@ -1,0 +1,60 @@
+/*!
+ * \section ProjectName Insurance Chatbot
+ * 
+ * \section Summary Project Summary
+ * The Insurance Chatbot is an AI-powered assistant designed to handle insurance-related queries, claims analysis, premium calculations, and document management. 
+ * It provides a user-friendly interface for interacting with insurance data, uploading documents, and retrieving insights using advanced AI models and vector databases.
+ * 
+ * \section Technologies Technologies Used
+ * - Python
+ * - Streamlit (Web Interface)
+ * - Weaviate (Vector Database)
+ * - LangChain (Text Splitting)
+ * - PyPDF2 (PDF Processing)
+ * - FPDF (PDF Generation)
+ * - pdfkit (Markdown to PDF Conversion)
+ * - Ollama (LLM Integration)
+ * - Google Gemini AI (Generative AI)
+ * - Markdown (Text Formatting)
+ * - JSON (Data Storage)
+ * 
+ * \section Diagram Dot Graph Diagram
+ * \startdot
+ * digraph InsuranceChatbot {
+ *     rankdir=LR;
+ *     node [shape=box];
+ *     "app.py" -> "agent.py" [label="Uses"];
+ *     "app.py" -> "doc_handler.py" [label="Processes Documents"];
+ *     "app.py" -> "vector_store2.py" [label="Stores/Queries Vectors"];
+ *     "app.py" -> "ledger.py" [label="Manages Metadata"];
+ *     "app.py" -> "prompt.py" [label="Generates Prompts"];
+ *     "app.py" -> "chat_bot.py" [label="Chat Interface"];
+ *     "vector_store2.py" -> "weaviate" [label="Vector Database"];
+ *     "doc_handler.py" -> "PyPDF2" [label="PDF Parsing"];
+ *     "doc_handler.py" -> "FPDF" [label="PDF Generation"];
+ *     "doc_handler.py" -> "pdfkit" [label="Markdown to PDF"];
+ *     "agent.py" -> "ollama" [label="LLM Integration"];
+ *     "agent.py" -> "Google Gemini AI" [label="Generative AI"];
+ * }
+ * \enddot
+ * 
+ * \section Libraries Libraries Used
+ * | Library                | Description                                                                                     |
+ * |------------------------|-------------------------------------------------------------------------------------------------|
+ * | [Streamlit](https://streamlit.io/) | Used for building the web interface.                                                   |
+ * | [Weaviate](https://weaviate.io/)   | Vector database for storing and querying document chunks.                              |
+ * | [LangChain](https://langchain.com/) | Text splitting for chunking documents.                                                |
+ * | [PyPDF2](https://pypi.org/project/PyPDF2/) | Extracts text from PDF files.                                                   |
+ * | [FPDF](https://pypi.org/project/fpdf/) | Generates PDF reports.                                                              |
+ * | [pdfkit](https://pypi.org/project/pdfkit/) | Converts Markdown to PDF.                                                        |
+ * | [Ollama](https://ollama.ai/)       | Integrates with LLM models for AI responses.                                           |
+ * | [Google Gemini AI](https://ai.google/) | Provides generative AI capabilities.                                                |
+ * | [Markdown](https://pypi.org/project/Markdown/) | Formats text and tables for rendering.                                          |
+ * | [JSON](https://www.json.org/)      | Stores metadata for uploaded files.                                                   |
+ * 
+ * \section Prompts Prompts Used
+ * - **insurance_query**: Generates a prompt for answering insurance-related questions using retrieved documents.
+ * - **summarize_context**: Summarizes the chat history into a concise paragraph.
+ * - **past_or_present**: Determines whether the user query is about past or present context.
+ * - **claim_query**: Generates a detailed prompt for claims analysis and premium calculation.
+ */

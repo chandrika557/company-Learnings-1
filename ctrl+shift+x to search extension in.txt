@@ -1,0 +1,59 @@
+ctrl+shift+x to search extension in vs code
+
+using System;
+
+namespace MyApplication
+{
+    public class Person
+    {
+        private string name;
+        private int age;
+
+        public Person(string name, int age)
+        {
+            this.name = name;
+            this.age = age;
+        }
+
+        public void Display()
+        {
+            
+            Console.WriteLine("name: " + name + "\nage: " + age);
+        }
+    }
+        
+   public class MathOperations
+   {
+    
+    public static int Add(int a, int b)
+    {
+        return a + b;
+    }
+
+    
+    public int Multiply(int a, int b)
+    {
+        return a * b;
+    }
+  }
+
+  public class ProgramMath
+  {
+    public static void Main(string[] args)
+    {
+      
+        Person person = new Person("pk", 22);
+            
+            
+        person.Display();
+        
+        int sum = MathOperations.Add(5, 3);
+        Console.WriteLine("Sum: " + sum);
+
+    
+        MathOperations mathOps = new MathOperations();
+        int product = mathOps.Multiply(5, 3);
+        Console.WriteLine("Product: " + product);
+      } 
+    }
+}
